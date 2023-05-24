@@ -1,0 +1,27 @@
+.postItemWrapper {
+  @apply rounded-lg max-w-[640px] w-screen py-4 px-5 bg-white;
+  &Info {
+    @apply flex items-center gap-2;
+    img {
+      @apply max-w-[25px] rounded-full;
+    }
+    strong {
+      @apply text-sm font-medium;
+    }
+  }
+  &Title {
+    @apply text-[22px] font-medium leading-[30px] mt-3;
+  }
+  &Body {
+    @apply mt-3;
+    p {
+      @apply font-normal text-[17px] leading-[24px];
+    }
+  }
+  &Bottom {
+    @apply flex justify-end;
+    &Btn {
+      @apply flex justify-center items-center bg-[#f03131] rounded-[9px] text-slate-50 hover:bg-[#ff0000] ease-in-out duration-700 text-sm font-medium w-[100px] h-[34px] mt-2;
+    }
+  }
+}
